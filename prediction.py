@@ -17,7 +17,7 @@ def filter_candidates(candidates, guess, strike, ball):
 def number_baseball():
     candidates = list(itertools.permutations(range(10), 3))
     
-    print("숫자 야구 게임입니다. 비밀 숫자를 정하고, 첫 번째로 예측할 숫자를 입력하세요.")
+    print("숫자 야구 게임 숫자 예측기 : 첫 번째로 예측할 숫자를 입력하세요.")
     
     user_guess = input("첫 번째 예측 숫자를 입력하세요 (예: 123): ").strip()
     if len(user_guess) != 3 or not user_guess.isdigit() or len(set(user_guess)) != 3:
